@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ভিশন এগ্রো - কৃষির নতুন দিগন্ত</title>
+       <link rel="stylesheet" href="style.css">
+    <style>
+        body {margin:0;font-family:Arial,sans-serif;background:#f9f9f9;scroll-behavior:smooth;color:#333}
+        header {background:#4CAF50;color:#ffffff;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;position:sticky;top:0;z-index:999;}
+        .logo {font-size:24px;font-weight:bold;}
+        .header-icons {display:flex;align-items:center;gap:10px;}
+        nav {display:flex;align-items:center;gap:15px;flex-wrap:wrap;}
+        nav a {color:#fff;text-decoration:none;font-weight:bold;}
+        .hamburger {display:none;font-size:28px;cursor:pointer;}
+        #nav-menu {display:flex;gap:15px;align-items:center;flex-wrap:wrap;}
+        .hero {background:url('img/agroc.png') no-repeat center center/cover;height:400px;display:flex;flex-direction:column;justify-content:center;align-items:center;color:rgb(9, 235, 95);text-shadow:2px 2px 5px #000;text-align:center;padding:20px;}
+        .hero h1 {font-size:40px;margin:10px 0;}
+        .hero p {font-size:18px;margin-bottom:20px;}
+        .btn {background:transparent;color:#fff;padding:10px 20px;text-decoration:none;border-radius:5px;font-weight:bold;border:2px solid #fff;}
+        .section {padding:50px 20px;max-width:1200px;margin:auto;background:#fff;margin-top:20px;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,0.05);text-align:center;}
+        .benefits {list-style:none;padding-left:0;}
+        .benefits li {margin-bottom:10px;}
+        .videos {display:flex;gap:15px;flex-wrap:wrap;justify-content:center;}
+        .contact-form form {display:flex;flex-direction:column;gap:10px;align-items:center;}
+        .contact-form input,.contact-form textarea {padding:10px;border:1px solid #ccc;border-radius:5px;width:100%;max-width:500px;}
+        .contact-form button {width:200px;background:#4CAF50;color:white;padding:10px;border:none;border-radius:5px;font-weight:bold;cursor:pointer;}
+        .cards {display:flex;flex-wrap:wrap;gap:15px;justify-content:center;}
+        .card {background:#e8f5e9;padding:20px;border-radius:10px;flex:1 1 150px;text-align:center;font-weight:bold;}
+        .gallery img {width:100%;max-width:250px;border-radius:10px;margin:10px;box-shadow:2px 2px 8px rgba(0,0,0,0.2);}
+        .testimonial-slider {text-align:center;font-style:italic;min-height:80px;}
+        .testimonial-slider .testimonial {display:none;}
+        .news-list {list-style:none;padding-left:0;}
+        .news-list li {margin-bottom:10px;}
+        .contact {text-align:center;}
+        .product-grid {display:flex;flex-wrap:wrap;gap:15px;justify-content:center;}
+        .product-card {background:#fff;border:1px solid #ddd;border-radius:10px;padding:15px;text-align:center;width:200px;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+        .product-card img {width:100%;border-radius:10px;}
+        .product-card h3 {margin:10px 0;font-size:18px;}
+        .product-card p {color:#555;}
+        .product-card .price {color:#4CAF50;font-weight:bold;margin-top:5px;}
+        footer {background:#333;color:#ccc;text-align:center;padding:20px;margin-top:20px;}
+        footer .social {margin-top:10px;}
+        footer .social a {color:#fff;margin:0 8px;font-size:20px;text-decoration:none;}
+        @media(max-width:768px){
+            .hamburger {display:block;font-size:30px;cursor:pointer;color:#fff;}
+            #nav-menu {display:none;flex-direction:column;position:fixed;top:60px;right:0;width:250px;height:calc(100% - 60px);background:#333;padding:15px 0;box-shadow:-5px 0 15px rgba(0,0,0,0.5);transition:all 0.3s ease;}
+            #nav-menu.show {display:flex;}
+            #nav-menu a {color:#fff;padding:15px 20px;width:100%;text-align:left;border-bottom:1px solid rgba(255,255,255,0.1);}
+            .cards {flex-direction:column;}
+            nav {flex-direction:column;}
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">ভিশন এগ্রো</div>
+    <div class="header-icons">
+        <div class="hamburger" id="hamburger">☰</div>
+    </div>
+    <nav id="nav-menu">
+        <a href="#home">হোম</a>
+        <a href="#about">আমাদের সম্পর্কে</a>
+        <a href="#services">সেবা</a>
+        <a href="#products">পণ্য</a>
+        <a href="#stories">সফলতার গল্প</a>
+        <a href="#news">সংবাদ</a>
+        <a href="#contact">যোগাযোগ</a>
+    </nav>
+</header>
+<section class="hero" id="home">
+    <h1>সুস্থ কৃষি, সবুজ দেশ</h1>
+    <p>নিরাপদ খাদ্য উৎপাদনে ভিশন এগ্রো দেশের সাথে।</p>
+    <a href="#contact" class="btn">যোগাযোগ করুন</a>
+</section>
+<section class="section" id="about">
+    <h2>আমাদের সম্পর্কে</h2>
+    <p>ভিশন এগ্রো বাংলাদেশের অন্যতম কৃষি প্রতিষ্ঠান। আমরা কৃষক ও ভোক্তাদের মাঝে নিরাপদ ও টেকসই কৃষি প্রযুক্তি পৌঁছে দিচ্ছি।</p>
+</section>
+<section class="section services" id="services">
+    <h2>আমাদের সেবা</h2>
+    <div class="cards">
+        <div class="card">অর্গানিক পণ্য সরবরাহ</div>
+        <div class="card">উন্নত কৃষি প্রযুক্তি</div>
+        <div class="card">কৃষি প্রশিক্ষণ ও কর্মশালা</div>
+        <div class="card">নিরাপদ বীজ ও সার</div>
+        <div class="card">পরামর্শ সেবা</div>
+    </div>
+</section>
+<section class="section products" id="products">
+    <h2>পণ্য ও গ্যালারী</h2>
+    <div class="gallery">
+        <img src="img/agro1.jpg" alt="সবজি">
+        <img src="img/agro2.jpg" alt="অর্গানিক পণ্য">
+        <img src="img/agro3.jpg" alt="কৃষি যন্ত্রপাতি">
+        <img src="img/agro4.jpg" alt="ফসলের মাঠ">
+    </div>
+    <h3>আমাদের পণ্যসমূহ</h3>
+    <div class="product-grid">
+        <div class="product-card"><img src="img/তাজা সবজি.jpg" alt="সবজি"><h3>তাজা সবজি</h3><p>নিরাপদ ও অর্গানিক</p><div class="price">৳২০০</div></div>
+        <div class="product-card"><img src="img/অর্গানিক ফল.webp" alt="অর্গানিক ফল"><h3>অর্গানিক ফল</h3><p>প্রাকৃতিকভাবে উৎপাদিত</p><div class="price">৳৩৫০</div></div>
+        <div class="product-card"><img src="img/কৃষি যন্ত্র.png" alt="কৃষি যন্ত্র"><h3>কৃষি যন্ত্র</h3><p>উন্নত প্রযুক্তির যন্ত্রপাতি</p><div class="price">৳৫০০০</div></div>
+        <div class="product-card"><img src="img/ধান.jpg" alt="ধান"><h3>ধান</h3><p>উন্নত জাতের ধান</p><div class="price">৳১৫০০</div></div>
+        <div class="product-card"><img src="img/নিরাপদ বীজ.jpg" alt="বীজ"><h3>নিরাপদ বীজ</h3><p>উন্নতমানের বীজ</p><div class="price">৳৩০০</div></div>
+        <div class="product-card"><img src="img/জৈব সার.jpg" alt="সার"><h3>জৈব সার</h3><p>১০০% অর্গানিক</p><div class="price">৳৪৫০</div></div>
+        <div class="product-card"><img src="img/গ্রাম্য মধু.jpg" alt="মধু"><h3>গ্রাম্য মধু</h3><p>বিশুদ্ধ ও প্রাকৃতিক</p><div class="price">৳৭৫০</div></div>
+        <div class="product-card"><img src="img/ফুলের চারা.jpg" alt="ফুল"><h3>ফুলের চারা</h3><p>বিভিন্ন প্রজাতির চারা</p><div class="price">৳১০০</div></div>
+        <div class="product-card"><img src="img/পোল্ট্রি ফিড.webp" alt="পোল্ট্রি"><h3>পোল্ট্রি ফিড</h3><p>উচ্চমানের খাদ্য</p><div class="price">৳৮৫০</div></div>
+        <div class="product-card"><img src="img/তাজা মাছ.jpg" alt="মাছ"><h3>তাজা মাছ</h3><p>নিরাপদ ও স্বাস্থ্যকর</p><div class="price">৳৬৫০</div></div>
+    </div>
+</section>
+<section class="section" id="stories">
+    <h2>কৃষক সফলতার গল্প</h2>
+    <div class="testimonial-slider">
+        <div class="testimonial">"ভিশন এগ্রো থেকে প্রযুক্তিগত সহায়তা নিয়ে আমি ৩০% উৎপাদন বাড়াতে পেরেছি।" - হাফিজুর রহমান</div>
+        <div class="testimonial">"উন্নতমানের বীজ ও সার সরবরাহের জন্য ভিশন এগ্রো আমার প্রথম পছন্দ।" - রফিকুল ইসলাম</div>
+        <div class="testimonial">"ভিশন এগ্রোর সাথে যুক্ত হওয়ার পর কৃষিকাজ অনেক সহজ ও লাভজনক হয়ে গেছে।" - শামীমা আক্তার</div>
+        <div class="testimonial">"ভিশন এগ্রো আমাকে আধুনিক কৃষি যন্ত্রপাতি ব্যবহারে প্রশিক্ষণ দিয়েছে। ফলস্বরূপ, আমার উৎপাদন বেড়েছে।" - সাইফুল আলম</div>
+        <div class="testimonial">"ভিশন এগ্রোর নিয়মিত পরামর্শ ও সহযোগিতায় আমি সময়মতো ফসল ঘরে তুলতে পেরেছি।" - মিজানুর রহমান</div>
+        <div class="testimonial">"ভিশন এগ্রোর পরামর্শ নিয়ে নতুন জাতের সবজি চাষ করে আয় দ্বিগুণ করতে পেরেছি।" - নাসিমা বেগম</div>
+        <div class="testimonial">"ভিশন এগ্রো আমার খামারের জন্য সঠিক সার ও কীটনাশকের পরামর্শ দিয়েছে। এতে রোগবালাই অনেক কমেছে।" - ফরিদুল ইসলাম</div>
+        <div class="testimonial">"ভিশন এগ্রো থেকে নিয়মিত কৃষি তথ্য ও বাজারদর পাই, যেটা আমার জন্য খুবই উপকারি।" - মনিরুল হক</div>
+        <div class="testimonial">"আমি ভিশন এগ্রোর স্মার্ট কৃষি অ্যাপ ব্যবহার করি। এতে খরচ কমে গেছে এবং মুনাফা বেড়েছে।" - কামরুল হাসান</div>
+        <div class="testimonial">"ভিশন এগ্রোর সহযোগিতায় আমি এখন রপ্তানিযোগ্য মানের পণ্য উৎপাদন করছি।" - শাহনাজ পারভীন</div>
+        <div class="testimonial">"ভিশন এগ্রো থেকে প্রযুক্তিগত সহায়তা নিয়ে আমি ৩০% উৎপাদন বাড়াতে পেরেছি।" - হাফিজুর রহমান</div>
+        <div class="testimonial">"এদের অর্গানিক পণ্য সত্যিই ভালো। আমি নিয়মিত নিচ্ছি।" - সুলতানা বেগম</div>
+        <div class="testimonial">"ভিশন এগ্রোর প্রশিক্ষণে অংশ নিয়ে কৃষি সম্পর্কে অনেক শিখেছি।" - আব্দুল কাদের</div>
+    </div>
+</section>
+<section class="section" id="news">
+    <h2>সাম্প্রতিক খবর</h2>
+    <ul class="news-list">
+        <li>🌱 অর্গানিক ফসলের বাজার প্রসারিত হচ্ছে।</li>
+        <li>🚜 কৃষি যন্ত্রপাতির নতুন কালেকশন এসেছে।</li>
+        <li>📢 পরবর্তী প্রশিক্ষণের তারিখ ঘোষণা করা হয়েছে।</li>
+    </ul>
+</section>
+<section class="section" id="why-us">
+    <h2>কেন আমাদের নির্বাচন করবেন?</h2>
+    <ul class="benefits">
+        <li>✅ ১০০% নিরাপদ ও অর্গানিক পণ্য</li>
+        <li>✅ দক্ষ পরামর্শক দল</li>
+        <li>✅ প্রযুক্তি ভিত্তিক কৃষি সেবা</li>
+        <li>✅ দেশের সেরা কৃষি পণ্য সরবরাহকারী</li>
+    </ul>
+</section>
+<section class="section" id="videos">
+    <h2>কৃষি ভিডিও গ্যালারী</h2>
+    <div class="videos">
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/YOUR_VIDEO_ID1" frameborder="0" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/YOUR_VIDEO_ID2" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+<section class="section" id="career">
+    <h2>ক্যারিয়ার</h2>
+    <p>ভিশন এগ্রোতে যোগ দিন! আমরা খুঁজছি:</p>
+    <ul>
+        <li>🔍 মার্কেটিং অফিসার</li>
+        <li>🔍 কৃষি পরামর্শক</li>
+        <li>🔍 প্রোডাক্ট ম্যানেজার</li>
+    </ul>
+    <p>CV পাঠান: <strong>career@vishonagro.com</strong></p>
+</section>
+<section class="section contact-form">
+    <h2>যোগাযোগ করুন</h2>
+    <form action="#" method="post">
+        <input type="text" name="name" placeholder="আপনার নাম" required>
+        <input type="email" name="email" placeholder="ইমেইল" required>
+        <textarea name="message" placeholder="মেসেজ লিখুন..." required></textarea>
+        <button type="submit">পাঠান</button>
+    </form>
+</section>
+<section class="section contact" id="contact">
+    <h2>যোগাযোগ</h2>
+    <p>📍 পুরানা পল্টন, ঢাকা-১০০০</p>
+    <p>📞 ০১৭১২৩৪৫৬৭৮</p>
+    <p>✉️ info@vishonagro.com</p>
+</section>
+<footer>
+    &copy; ২০২৫ ভিশন এগ্রো | Developed by Balad Builders
+    <div class="social">
+        <a href="#">🌐</a>
+        <a href="#">📘</a>
+        <a href="#">▶️</a>
+    </div>
+</footer>
+<script>
+const hamburger=document.getElementById('hamburger');
+const navMenu=document.getElementById('nav-menu');
+hamburger.addEventListener('click',()=>{navMenu.classList.toggle('show');});
+const testimonials=document.querySelectorAll('.testimonial-slider .testimonial');
+let index=0;
+function showTestimonial(){
+    testimonials.forEach((t,i)=>{t.style.display=(i===index)?'block':'none';});
+    index=(index+1)%testimonials.length;
+}
+showTestimonial();
+setInterval(showTestimonial,3000);
+</script>
+</body>
+</html>
